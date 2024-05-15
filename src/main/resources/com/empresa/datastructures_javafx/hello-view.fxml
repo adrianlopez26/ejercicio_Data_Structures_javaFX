@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.empresa.datastructures_javafx.HelloController">
+    <tabs>
+    <Tab text="List">
+        <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <Button layoutX="232.0" layoutY="88.0" mnemonicParsing="false" onAction="#agregarAl" prefHeight="36.0" prefWidth="77.0" text="Agregar" />
+                <Label layoutX="32.0" layoutY="28.0" prefHeight="28.0" prefWidth="350.0" text="Interfaz List ArrayList - Vector -LinkedList">
+                    <font>
+                        <Font size="19.0" />
+                    </font></Label>
+                <TextArea fx:id="area_datos" layoutX="32.0" layoutY="145.0" prefHeight="200.0" prefWidth="200.0" />
+                <TextField fx:id="txt_dato" layoutX="32.0" layoutY="88.0" promptText="Introduce un dato" />
+                <Button layoutX="330.0" layoutY="88.0" mnemonicParsing="false" onAction="#mostrarAl" prefHeight="37.0" prefWidth="81.0" text="Mostrar" />
+            </children></AnchorPane>
+        </content>
+    </Tab>
+        <Tab text="Set">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="36.0" layoutY="46.0" prefHeight="25.0" prefWidth="510.0" text="Comprueba si admite duplicados y que esten ordenados">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <ListView fx:id="list_datos_set" layoutX="36.0" layoutY="142.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label fx:id="label_count_set" layoutX="36.0" layoutY="350.0" prefHeight="25.0" prefWidth="200.0" text="Número de elementos: 0" />
+                        <TextField fx:id="txt_dato_set" layoutX="36.0" layoutY="93.0" promptText="Insertar datos" />
+                        <Button layoutX="210.0" layoutY="93.0" mnemonicParsing="false" onAction="#agregarSet" prefHeight="34.0" prefWidth="63.0" text="Agregar" />
+                        <Button layoutX="300.0" layoutY="93.0" mnemonicParsing="false" onAction="#mostrarSet" prefHeight="35.0" prefWidth="66.0" text="Mostar" />
+                        <Button fx:id="btn_sort" layoutX="400.0" layoutY="93.0" mnemonicParsing="false" onAction="#mostrarSetOrdenado" prefHeight="35.0" prefWidth="66.0" text="Ordenar" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    <Tab text="Map">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+    </Tab>
+    <Tab text="Queue">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+    </Tab>
+    <Tab text="Pichichi">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ComboBox fx:id="combo_jugadores" layoutX="36.0" layoutY="93.0" prefWidth="150.0" />
+                        <TextField fx:id="txt_goles" layoutX="200.0" layoutY="93.0" promptText="Goles" />
+                        <Button layoutX="267.0" layoutY="214.0" mnemonicParsing="false" onAction="#actualizarClasificacion" prefHeight="35.0" prefWidth="120.0" text="Clasificación" />
+                        <Label fx:id="label_jornada" layoutX="36.0" layoutY="46.0" prefHeight="25.0" prefWidth="200.0" text="Jornada: 1" />
+                        <ListView fx:id="list_clasificacion" layoutX="36.0" layoutY="142.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_jugador" layoutX="252.0" layoutY="154.0" promptText="Nombre del jugador" />
+                        <Button layoutX="421.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarJugador" prefHeight="34.0" prefWidth="141.0" text="Agregar jugador" />
+                        <Button layoutX="401.0" layoutY="89.0" mnemonicParsing="false" onAction="#agregarGoles" prefHeight="34.0" prefWidth="138.0" text="Agregar goles" />
+                    </children>
+                </AnchorPane>
+            </content>
+    </Tab>
+    </tabs>
+</TabPane>
